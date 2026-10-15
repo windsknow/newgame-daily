@@ -1,0 +1,274 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>新游日报 2026-10-15</title><style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#1d2129;--sub:#5c6370;--faint:#8a919e;--line:#e5e7eb;--chip:#f0f2f5;--nav:#fbfbfc;
+--focus:#d4380d;--focus-bg:#fff2e8;--ok:#08979c;--ok-bg:#e6fffb;--info:#1d39c4;--info-bg:#f0f5ff;--warn:#ad6800;--warn-bg:#fffbe6;
+--accent:#722ed1;--accent-bg:#f9f0ff;--muted:#5c6370;--muted-bg:#f0f2f5;--market:#262626;--market-bg:#f0f0f0;--up:#cf1322;--down:#389e0d}
+@media (prefers-color-scheme:dark){:root{--bg:#121417;--card:#1c1f24;--ink:#e6e8eb;--sub:#a3a9b3;--faint:#7b828d;--line:#2c3036;
+--chip:#262a30;--nav:#17191d;--focus:#ff7a45;--focus-bg:#3a2218;--ok:#36cfc9;--ok-bg:#132f2e;--info:#85a5ff;--info-bg:#1a2340;
+--warn:#ffc53d;--warn-bg:#3a3014;--accent:#b37feb;--accent-bg:#2a1d3d;--muted:#a3a9b3;--muted-bg:#262a30;--market:#e6e8eb;
+--market-bg:#2c3036;--up:#ff7875;--down:#95de64}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.side{position:fixed;top:0;left:0;bottom:0;width:232px;overflow-y:auto;background:var(--nav);border-right:1px solid var(--line);padding:20px 14px 24px}
+.side .brand{font-size:19px;font-weight:700;padding:0 6px}.side .day{color:var(--sub);font-size:12.5px;padding:0 6px 14px}
+.side .grp{font-size:11.5px;color:var(--faint);letter-spacing:1px;margin:14px 6px 4px}
+.side a{display:block;color:var(--ink);text-decoration:none;border-radius:8px}
+.side a.sec{display:flex;justify-content:space-between;align-items:center;padding:6px 8px;font-weight:600;font-size:14px}
+.side a.sec b{font-size:12px;color:var(--focus);background:var(--focus-bg);border-radius:999px;padding:0 7px}
+.side a.sec.on,.side a.sec:hover{background:var(--chip)}
+.side ul{list-style:none;margin:0 0 4px;padding:0 0 0 8px}
+.side li a{font-size:12.5px;color:var(--sub);padding:3px 8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.side li a:hover{color:var(--ink);background:var(--chip)}
+.side .arch{margin-top:18px;font-size:12.5px;padding:0 6px;color:var(--faint)}.side .arch a{display:inline;color:var(--info);margin-right:8px}
+main{margin-left:232px}
+.wrap{max-width:1240px;margin:0 auto;padding:24px 22px 48px}
+header h1{margin:0;font-size:26px}header .date{color:var(--sub);margin-top:2px}
+section{margin-top:34px;scroll-margin-top:12px}
+.gh{font-size:13px;color:var(--faint);letter-spacing:2px;margin:40px 0 -18px;border-top:1px dashed var(--line);padding-top:14px}
+section h2{font-size:20px;margin:0 0 2px}section .desc{color:var(--sub);font-size:13px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:12px}
+.hero{aspect-ratio:16/9;background:var(--chip);display:flex;gap:2px;overflow:hidden}
+.hero img{flex:1;min-width:0;width:100%;height:100%;object-fit:cover;display:block}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.title{display:flex;gap:12px;align-items:center}
+.icon{width:52px;height:52px;border-radius:12px;flex:none;background:var(--chip);object-fit:cover;border:1px solid var(--line)}
+.title h3{margin:0;font-size:17px;line-height:1.3}
+.title .alt{color:var(--sub);font-size:12.5px}.title .tr{font-size:11px;color:var(--faint);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:2px;font-weight:400}
+.title .sub{color:var(--faint);font-size:12.5px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.b{font-size:12px;padding:1px 8px;border-radius:999px;font-weight:500}
+.b.focus{color:var(--focus);background:var(--focus-bg)}.b.ok{color:var(--ok);background:var(--ok-bg)}
+.b.info{color:var(--info);background:var(--info-bg)}.b.warn{color:var(--warn);background:var(--warn-bg)}
+.b.accent{color:var(--accent);background:var(--accent-bg)}.b.muted{color:var(--muted);background:var(--muted-bg)}
+.b.market{color:var(--market);background:var(--market-bg)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 10px;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.m .l{font-size:11.5px;color:var(--faint)}.m .v{font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
+.m .n{font-size:11.5px;color:var(--sub)}.m .n.up{color:var(--up)}.m .n.down{color:var(--down)}
+.note{font-size:12.5px;color:var(--sub);background:var(--chip);border-radius:8px;padding:6px 10px}
+.ai{font-size:14px;line-height:1.7}.ai .lab{font-size:11.5px;color:var(--faint);display:block;margin-bottom:2px}.ai.weak{color:var(--sub)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font-size:11.5px;color:var(--sub);background:var(--chip);padding:1px 7px;border-radius:6px}
+.links{display:flex;gap:14px;margin-top:auto;padding-top:4px}.links a{font-size:13px;color:var(--info);text-decoration:none}
+details.more{margin-top:14px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 14px}
+details.more summary{cursor:pointer;color:var(--sub);font-size:13.5px;padding:8px 0}
+.row{display:flex;align-items:center;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:13.5px}
+.row img,.row .ph{width:30px;height:30px;border-radius:8px;flex:none;background:var(--chip);object-fit:cover}
+.row .nm{font-weight:500;min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.row .nm small{color:var(--faint);font-weight:400;margin-left:6px}
+.row .ln{color:var(--sub);white-space:nowrap}
+.foot{margin-top:40px;color:var(--faint);font-size:12.5px;line-height:1.8}
+@media (max-width:900px){.side{position:sticky;top:0;bottom:auto;width:auto;height:auto;display:flex;gap:4px;align-items:center;overflow-x:auto;
+padding:8px 10px;border-right:0;border-bottom:1px solid var(--line);z-index:5}.side .brand{font-size:15px;white-space:nowrap}
+.side .day,.side .grp,.side ul,.side .arch{display:none}.side a.sec{white-space:nowrap;font-size:13px}main{margin-left:0}
+section,.card{scroll-margin-top:56px}.wrap{padding:16px 16px 40px}}
+@media (max-width:420px){.grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.row .ln{white-space:normal;text-align:right}}
+</style></head>
+<body><nav class="side"><div class="brand">新游日报</div><div class="day">2026 年 10 月 16 日 · 周五</div><div class="grp">上线新品</div><a class="sec" href="#mobile">手游上线新品<b>9</b></a><ul><li><a href="#mobile-0">World of Dokkaebi</a></li><li><a href="#mobile-1">Zeus: God of Arrogance</a></li><li><a href="#mobile-2">Eclipse: The Awakening</a></li><li><a href="#mobile-3">Mabinogi Mobile</a></li><li><a href="#mobile-4">我叫MT：崛起</a></li><li><a href="#mobile-5">王者万象棋</a></li><li><a href="#mobile-6">Hudeodeok Survival - 777 Draws Giveaway</a></li><li><a href="#mobile-7">塔塔冒险队</a></li><li><a href="#mobile-8">Log W: Remains of God</a></li></ul><div class="grp">测试</div><a class="sec" href="#taptap">国内手游测试<b>11</b></a><ul><li><a href="#taptap-0">异人之下</a></li><li><a href="#taptap-1">极境：垂钓者</a></li><li><a href="#taptap-2">极限战场</a></li><li><a href="#taptap-3">变形金刚：新纪元</a></li><li><a href="#taptap-4">渊环</a></li><li><a href="#taptap-5">美职篮奇迹梦之队</a></li><li><a href="#taptap-6">我家猫猫是女仆！</a></li><li><a href="#taptap-7">淡墨水云乡</a></li><li><a href="#taptap-8">重返地心之下</a></li><li><a href="#taptap-9">代号：8</a></li><li><a href="#taptap-10">我在地牢当老六</a></li></ul><div class="arch">往期：<a href="2026-10-14.html">10-14</a><a href="2026-10-13.html">10-13</a><a href="2026-10-12.html">10-12</a></div></nav>
+<main><div class="wrap">
+<header><h1>新游日报</h1><div class="date">2026 年 10 月 16 日 · 周五 · 数据为北京时间 10 月 15 日（周四）全天（Steam 采样至 22:00 · 手游榜至 23:05 · TapTap 至 23:25）</div></header>
+<div class="gh">上线新品</div><section id="mobile"><h2>手游上线新品</h2><div class="desc">中美日 App Store / 韩国 Google Play 畅销榜里的新品；重点 = 中日韩畅销前 30、美国前 50</div><div class="grid"><article class="card" id="mobile-0">
+<div class="hero"><img src="https://play-lh.googleusercontent.com/7X3y38c9ZyuZ14CnIReTJ_L_k1cluHsBFpNLoC56vN-OdbJYeMyDo4mPcXxSoqTU0eU0ryvf7xSRe_6pn5oW9lw=w526-h296-rw" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://play-lh.googleusercontent.com/PJFxzucCQHWQZBZnyvLp3IDp4G70W2o_AlXxVIRSn_pB66f-STd4yFDJNGJ5clJDKi9DK8jcn-D9Tq0L5pRz=w128-h128" alt="" loading="lazy"><div><h3>World of Dokkaebi<span class="tr" title="机器翻译，非官方译名">译</span></h3><div class="alt">도깨비의세계</div><div class="sub">Kakao Games Corp. · 角色扮演</div></div></div>
+ <div class="badges"><span class="b market">韩国 GP</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#1</div><div class="n ">持平</div></div><div class="m"><div class="l">日终</div><div class="v">#1</div></div><div class="m"><div class="l">免费榜</div><div class="v">#1</div></div><div class="m"><div class="l">上线</div><div class="v">15 天</div><div class="n ">2026-09-30</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+576</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据Google Play 描述整理</span>韩国传说题材的2.5D K-幻想RPG。玩法：在2.5D世界中探索冒险；自选技能组合，自由设计战斗风格。特色：2D像素角色与3D背景结合的混合视觉；从头到脚自由装扮像素角色，可乘骑坐骑；门派协作内容，支持离线游玩成长。商业化：含概率型道具。</div>
+ 
+ <div class="links"><a href="https://play.google.com/store/apps/details?id=com.kakaogames.dokkaebi&amp;hl=ko&amp;gl=KR" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-1">
+<div class="hero"><img src="https://play-lh.googleusercontent.com/mVu8DcP96qtp7gcT89yKlLTM5pTTYoBXqRvk8Bl1dDcokyDic5hnttb4q1cODggkyBdCEnG9WoITn-GTnmqlRg=w526-h296-rw" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://play-lh.googleusercontent.com/Cn3mFHKMLbpjEBSZGiCKysZpRKXYNm5CH4vGFBLUMpWtZ7gk_2ONDoqAfJ6OIh_V-Lm3d8uZOmzKoAFdQxW4=w128-h128" alt="" loading="lazy"><div><h3>Zeus: God of Arrogance<span class="tr" title="机器翻译，非官方译名">译</span></h3><div class="alt">제우스: 오만의 신</div><div class="sub">Com2uS · 角色扮演</div></div></div>
+ <div class="badges"><span class="b market">韩国 GP</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#2</div><div class="n ">持平</div></div><div class="m"><div class="l">日终</div><div class="v">#2</div></div><div class="m"><div class="l">免费榜</div><div class="v">#159</div></div><div class="m"><div class="l">上线</div><div class="v">56 天</div><div class="n ">2026-08-20</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+15</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据Google Play 描述整理</span>希腊神话题材的竞争型MMORPG。玩法：玩家在竞争场中与对手竞争，参与无限之塔、斗兽场等竞争内容；按职业特性进行战斗，使用技能。特色：AI模式：下线后分身在24小时内持续成长；阿蒂桑：生产独占道具、获得经济收益的经济型职业。商业化：部分付费道具购买。</div>
+ 
+ <div class="links"><a href="https://play.google.com/store/apps/details?id=com.com2us.es.android.google.kr.normal&amp;hl=ko&amp;gl=KR" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-2">
+<div class="hero"><img src="https://play-lh.googleusercontent.com/rLIO81TwTexfZ9oRuKRQv-cqlMbTKktb_547juZzjuaN0hvmYteIv1eXLvAt3x0G1KgUG81Vh7AfrRB0uJ447JE=w526-h296-rw" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://play-lh.googleusercontent.com/JhepoyYDmabwj5ffSFC3cyfAdllyeIdHzSW5a3i_nlzsahXojL7S57JR1_RlYYkRh02OXzZM6K1s9KWnd-1Mpw=w128-h128" alt="" loading="lazy"><div><h3>Eclipse: The Awakening<span class="tr" title="机器翻译，非官方译名">译</span></h3><div class="alt">이클립스: 더 어웨이크닝</div><div class="sub">Smilegate, Inc. · 角色扮演</div></div></div>
+ <div class="badges"><span class="b market">韩国 GP</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#7</div><div class="n ">持平</div></div><div class="m"><div class="l">日终</div><div class="v">#7</div></div><div class="m"><div class="l">免费榜</div><div class="v">未进</div></div><div class="m"><div class="l">上线</div><div class="v">38 天</div><div class="n ">2026-09-07</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+30</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据Google Play 描述整理</span>奇幻题材MMORPG，支持PC与移动端跨平台。玩法：在圣所持续获取召唤券与成长资源，离线也能成长；通过AI模式在未登录时继续推进角色成长；参与随机匹配的10对10 RvR战斗。特色：用多种权能组合构筑自己的战斗配置；融合两个技能来获得新技能。</div>
+ 
+ <div class="links"><a href="https://play.google.com/store/apps/details?id=com.smilegate.eclipse.stove.google&amp;hl=ko&amp;gl=KR" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-3">
+<div class="hero"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e0/57/c4/e057c4f7-3da3-d378-0265-9a9a25e480a1/01_KeyVisual_2796x1290.jpg/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/da/3c/63/da3c634f-da6e-2007-f536-113e235cdfea/02__U4e16_U754c_U89b3_2796x1290.jpg/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/66/d5/bb66d561-175b-ff38-7a96-44fb218914d7/03__U6226_U95d8_2796x1290.jpg/320x480bb.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/1f/e4/5f1fe486-2d98-8633-ae4f-bd4cb4339b93/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/128x128bb.jpg" alt="" loading="lazy"><div><h3>Mabinogi Mobile<span class="tr" title="机器翻译，非官方译名">译</span></h3><div class="alt">マビノギモバイル</div><div class="sub">NEXON Co., Ltd. · 角色扮演</div></div></div>
+ <div class="badges"><span class="b market">日本 iOS</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#17</div><div class="n up">↑3</div></div><div class="m"><div class="l">日终</div><div class="v">#28</div></div><div class="m"><div class="l">免费榜</div><div class="v">#18</div></div><div class="m"><div class="l">上线</div><div class="v">8 天</div><div class="n ">2026-10-07</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+44</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据App Store 描述整理</span>奇幻世界题材的移动端RPG，含生活与社交内容。玩法：跟随女神之声引导，在重构世界观中展开冒险；用升级卡成长，按符文刻印改变技能定制战斗风格；可更换职业，体验不同战斗方式。特色：钓鱼、料理、采集等生活内容可自由游玩；篝火前与同伴跳舞、演奏乐器等社交内容；用时装道具与染色打造个性化外观。</div>
+ 
+ <div class="links"><a href="https://apps.apple.com/jp/app/%E3%83%9E%E3%83%93%E3%83%8E%E3%82%AE%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB/id6775403879?uo=4" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-4">
+<div class="hero"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/90/ec/e9/90ece9d1-6612-4b40-4f0a-182c3ad67be9/1.jpg/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/53/5a/01/535a01c1-bf96-6f0e-356b-89f3727a182c/1790242882616.jpg/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b8/ed/e4/b8ede485-a783-bbb9-90f9-a4270bade39b/3.jpg/320x480bb.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/bc/b7/debcb778-a945-9265-59e6-b1a2b0d03b48/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/128x128bb.jpg" alt="" loading="lazy"><div><h3>我叫MT：崛起</h3><div class="sub">Chengmai Wulin Interactive Entertainment Co.,Ltd · 角色扮演、卡牌</div></div></div>
+ <div class="badges"><span class="b market">中国 iOS</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#20</div><div class="n up">↑18</div></div><div class="m"><div class="l">日终</div><div class="v">#20</div></div><div class="m"><div class="l">免费榜</div><div class="v">#1</div></div><div class="m"><div class="l">上线</div><div class="v">5 天</div><div class="n ">2026-10-10</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+437</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据App Store 描述 + TapTap 简介整理</span>魔幻题材卡牌放置手游，扮演会长带队开荒。玩法：收集英雄组建五人阵容，针对关卡随时变阵；挂机自动刷本攒资源，提升队伍战力；在竞技场主动发起挑战，与其他玩家切磋。特色：阵营羁绊加成，自由搭配阵容；爬塔玩法：卡拉赞之塔层层进阶，通关得奖励；罪魂之塔无尽连战，调配五人小队闯关。</div>
+ 
+ <div class="links"><a href="https://apps.apple.com/cn/app/%E6%88%91%E5%8F%ABmt-%E5%B4%9B%E8%B5%B7/id6808532104?uo=4" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-5">
+<div class="hero"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3b/d4/a9/3bd4a9ac-f600-1e78-7c45-1af68ca5657d/1.png/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/53/cd/77/53cd77da-d966-dc6f-b248-0b3463686884/2.jpg/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/67/dd/74/67dd74c5-9f4f-56a2-c860-6ba456ec918a/3.jpg/320x480bb.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/02/5c/7a/025c7a40-b125-5ab9-1237-7283fcbf089a/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/128x128bb.jpg" alt="" loading="lazy"><div><h3>王者万象棋</h3><div class="sub">Shenzhen Tencent Tianyou Technology Ltd · 策略、卡牌</div></div></div>
+ <div class="badges"><span class="b market">中国 iOS</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#22</div><div class="n down">↓1</div></div><div class="m"><div class="l">日终</div><div class="v">#25</div></div><div class="m"><div class="l">免费榜</div><div class="v">#14</div></div><div class="m"><div class="l">上线</div><div class="v">37 天</div><div class="n ">2026-09-08</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+356</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据App Store 描述 + TapTap 简介整理</span>王者荣耀英雄题材的策略对战游戏。玩法：每局6名玩家选棋手进入万象大赛，养成王牌英雄；通过拍卖、天赋、效果牌等随机事件做选择。</div>
+ 
+ <div class="links"><a href="https://apps.apple.com/cn/app/%E7%8E%8B%E8%80%85%E4%B8%87%E8%B1%A1%E6%A3%8B/id1614798032?uo=4" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-6">
+<div class="hero"><img src="https://play-lh.googleusercontent.com/-8wpvcAqPqRUZOCKfP_etnZU9btAY4P3dhiSPcPnI8veV0c9LTFtEotpmZNpoWRi-q01553owOOclsTP_DbS6w=w526-h296-rw" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://play-lh.googleusercontent.com/rDbVN_XC0pxpQMgTMRD9n7et-PpV5PFfF-jS86jBpkKkiSx2kPrvN65t_XlY5V4sHQvbL1RxT05eMJIXksDXoA=w128-h128" alt="" loading="lazy"><div><h3>Hudeodeok Survival - 777 Draws Giveaway<span class="tr" title="机器翻译，非官方译名">译</span></h3><div class="alt">후더덕 서바이벌-777뽑기 증정</div><div class="sub">Joy Nice Games · 角色扮演</div></div></div>
+ <div class="badges"><span class="b market">韩国 GP</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#23</div><div class="n ">持平</div></div><div class="m"><div class="l">日终</div><div class="v">#24</div></div><div class="m"><div class="l">免费榜</div><div class="v">#12</div></div><div class="m"><div class="l">上线</div><div class="v">34 天</div><div class="n ">2026-09-11</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+405</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据Google Play 描述整理</span>僵尸末日题材的Roguelike射击动作游戏。玩法：白天收集资源升级基地、招募士兵，夜晚抵御僵尸进攻；战斗中随机出现技能，可更换装备应对战局；组合英雄、技能与塔防要素构建战斗流派。特色：白天建设基地、夜晚生存防守的昼夜循环；可获取多种风格的鸭子皮肤；火焰、闪电、冷气、能量、物理等属性自由组合并触发专属协同效果。</div>
+ 
+ <div class="links"><a href="https://play.google.com/store/apps/details?id=com.mrtgd2kr.google&amp;hl=ko&amp;gl=KR" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-7">
+<div class="hero"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/3c/d6/c03cd69c-62c9-bbf4-28fc-ee44a1490d8d/1.jpg/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/21/e2/48/21e2488e-9665-c8bd-a8dd-e0b878d77d78/2CN.jpg/320x480bb.jpg" alt="" loading="lazy"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/07/57/f9/0757f9a5-8894-4c6e-89be-46cd5405b94c/6.jpg/320x480bb.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/21/3f/f0/213ff063-6848-2415-dad3-7099efbbf1d6/AppIcon-Mainland-0-0-1x_U007epad-0-11-0-85-220.png/128x128bb.jpg" alt="" loading="lazy"><div><h3>塔塔冒险队</h3><div class="sub">Shanghai Lilith Computer Technology Company Limited · 卡牌、角色扮演</div></div></div>
+ <div class="badges"><span class="b market">中国 iOS</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#25</div><div class="n ">持平</div></div><div class="m"><div class="l">日终</div><div class="v">#27</div></div><div class="m"><div class="l">免费榜</div><div class="v">#39</div></div><div class="m"><div class="l">上线</div><div class="v">41 天</div><div class="n ">2026-09-04</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+179</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据App Store 描述整理</span>收集塔塔并进化对战的休闲游戏。玩法：收集塔塔，喂食使其进化增强实力；部署阵营，利用属性相克对战臭臭大军；建造小家并与塔塔互动。特色：进化可随机触发闪光形态；属性相克、阵型部署、流派组合。</div>
+ 
+ <div class="links"><a href="https://apps.apple.com/cn/app/%E5%A1%94%E5%A1%94%E5%86%92%E9%99%A9%E9%98%9F/id6759896881?uo=4" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article><article class="card" id="mobile-8">
+<div class="hero"><img src="https://play-lh.googleusercontent.com/d5esB5P9DzIPxxbk0QUwrfHl11s6iAdQRQUvBIrstBq2uJg11tY3PpOBgGP_Ox3Pa8i5WzdxiNA556SQKreShQ=w526-h296-rw" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://play-lh.googleusercontent.com/wPufQAobuu_bMHJyHAmyZLteiFXFFfGyr_II-agf6JMw518mjIbDzFdR3LXbuKvT12TQ2kPvjRvLN-nyJ8NAyA=w128-h128" alt="" loading="lazy"><div><h3>Log W: Remains of God<span class="tr" title="机器翻译，非官方译名">译</span></h3><div class="alt">로그W : 리메인즈 오브 갓</div><div class="sub">Efun Company · 角色扮演</div></div></div>
+ <div class="badges"><span class="b market">韩国 GP</span><span class="b focus">重点</span><span class="b info">新上线</span></div>
+ <div class="metrics"><div class="m"><div class="l">畅销 当日最高</div><div class="v">#26</div><div class="n up">↑2</div></div><div class="m"><div class="l">日终</div><div class="v">#30</div></div><div class="m"><div class="l">免费榜</div><div class="v">#22</div></div><div class="m"><div class="l">上线</div><div class="v">48 天</div><div class="n ">2026-08-28</div></div><div class="m"><div class="l">评分人数日增</div><div class="v">+135</div></div></div>
+ 
+ <div class="ai"><span class="lab">玩法 · AI 依据Google Play 描述整理</span>暗黑神域题材的RPG，探索遗迹收集碎片。玩法：深入遗迹追踪散落的核心碎片，面对苏醒的守护者；在前进中做出选择，选择会改变命运与战局；与拥有不同能力的同伴一起探索并征服遗迹。特色：夺取遗迹宝物后触发陷阱并遭追击，需极限逃脱；强者聚集，靠瞬间判断、策略与战力决出唯一胜者。</div>
+ 
+ <div class="links"><a href="https://play.google.com/store/apps/details?id=com.krd8.google&amp;hl=ko&amp;gl=KR" target="_blank" rel="noopener">商店页 ↗</a></div>
+</div></article></div><details class="more"><summary>其余 25 款（列出前 15，完整见 Excel）</summary><div class="row"><img src="https://play-lh.googleusercontent.com/eDxdGytER34b52oX4FB5m5AyCdQLjJEy9mzmI2lHfKs_a90-8TvK3TSKvafp1uetKZliECkGXPRTEOAeTGYDWg=w128-h128" alt="" loading=lazy><span class="nm">Wild Water World<small>아쿠아랜드: 크레이지 서바이벌</small></span><span class="ln">韩国 GP · 畅销 #35 · 上线 45 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/19/3f/9a/193f9afd-75c4-b277-e2f5-6b1e51f816f9/AppIcon-0-0-1x_U007epad-0-1-85-220.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">诡秘之主</span><span class="ln">中国 iOS · 畅销 #43 · 上线 58 天</span></div><div class="row"><img src="https://play-lh.googleusercontent.com/nIjO9pFz1R7G_wct00QMBKVqAmLHs2TqiaCmSUJfnKPw7yG_VzSmp26TRGCmm98v-Mye0MtsW_xz8CHNdIFD1A=w128-h128" alt="" loading=lazy><span class="nm">塔塔冒险队<small>뚜까펫: 서바이벌</small></span><span class="ln">韩国 GP · 畅销 #43 · 上线 51 天</span></div><div class="row"><img src="https://play-lh.googleusercontent.com/dIGYOhW1mwhxLLCti6-O-VQAL_5oz7yzyLkP5WJH80i6j3HWcaIOfTnJ-FaQC1tQ7DC2pR5BphwkZJ9tFQe_ag=w128-h128" alt="" loading=lazy><span class="nm">Top Force<small>Top Force: 탑 포스</small></span><span class="ln">韩国 GP · 畅销 #46 · 上线 52 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/65/cc/cc/65ccccd8-1b60-803e-0b51-617f6f773a91/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">Touken Ranbu Puzgiri<small>刀剣乱舞ぱずぎり</small></span><span class="ln">日本 iOS · 畅销 #54 · 上线 22 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/31/38/19/313819f2-862f-780f-363e-1e0d539647a0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">瘋狂水世界<small>波乱水世界</small></span><span class="ln">日本 iOS · 畅销 #58 · 上线 44 天</span></div><div class="row"><img src="https://play-lh.googleusercontent.com/ceUBjNJg-amLkxroSmXROYnMLidaq6fv7nvXuWxgxZ9_9tdRLC62yprljkycEM7YIpnBtnC-H1PJF8V47BO8Wg=w128-h128" alt="" loading=lazy><span class="nm">Only I Am an SSS-Rank Exorcist<small>나만 SSS급 퇴마사</small></span><span class="ln">韩国 GP · 畅销 #59 · 上线 36 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/6d/a2/c06da251-7151-26b5-2483-aee665d4c887/AppIcon_1-1x_U007emarketing-0-11-0-85-220-0.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">地城狩猎-2026技能百搭地城刷宝爽游</span><span class="ln">中国 iOS · 畅销 #61 · 上线 4 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bc/53/7c/bc537cc2-0d28-069e-31b5-136f7abcd055/AppIcon-1x_U007emarketing-0-8-85-220-0.jpeg/128x128bb.jpg" alt="" loading=lazy><span class="nm">剑侠世界4：无限</span><span class="ln">中国 iOS · 畅销 #62 · 上线 2 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f0/ce/a6/f0cea6b4-4f43-68ef-6469-a303ba06eff7/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">梦幻西游：再续前缘</span><span class="ln">中国 iOS · 畅销 #66 · 上线 58 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/da/b1/4fdab100-27a8-ffcb-cdcf-c131d46c9763/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">BanG Dream! Our Notes<small>バンドリ！アワーノーツ</small></span><span class="ln">日本 iOS · 畅销 #68 · 上线 23 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f8/68/29/f86829c9-16a5-c9ed-b1f1-c425e9a0e1de/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">闪耀吧！噜咪</span><span class="ln">中国 iOS · 畅销 #70 · 上线 29 天</span></div><div class="row"><img src="https://play-lh.googleusercontent.com/zu4GHRKnc_qTeX_Pk0xEcdDpQY0EgkM5XfYqzIhBC8nMisHsyPAEZSfV2Zd1pLxWIFpBNinrsfZrsifrRXtaNg=w128-h128" alt="" loading=lazy><span class="nm">BanG Dream! Our Notes<small>뱅드림! 아워 노트</small></span><span class="ln">韩国 GP · 畅销 #86 · 上线 27 天</span></div><div class="row"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/ba/fe/99bafe58-56dc-fb79-ab13-41ade98ff1d3/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/128x128bb.jpg" alt="" loading=lazy><span class="nm">弹壳战机！</span><span class="ln">中国 iOS · 畅销 #88 · 上线 25 天</span></div><div class="row"><img src="https://play-lh.googleusercontent.com/XJBbIgPZfySq7txP8LzUVESgiieGgnRElQYwp89y3YyVuji7AWOpoG-oGARUYIyhAZILmS98BrrhBp-Wxo_n=w128-h128" alt="" loading=lazy><span class="nm">Evernight: Reverse<small>에버나이트: 리버스</small></span><span class="ln">韩国 GP · 畅销 #96 · 上线 34 天</span></div></details></section><div class="gh">测试</div><section id="taptap"><h2>国内手游测试</h2><div class="desc">TapTap 预约榜 Top50 + 测试中 / 测试招募的游戏；重点 = 新进榜 / 在测 / 预约日增 ≥ 1 万</div><div class="grid"><article class="card" id="taptap-0">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/9da9df2a7218ffce0d1b62ed133cb642.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/0cf8306bf24d288ddd0f31aad9c19580.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>异人之下</h3><div class="sub">腾讯 · 高画质,格斗,动作</div></div></div>
+ <div class="badges"><span class="b focus">测试招募</span><span class="b focus">重点</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#1</div><div class="n ">持平</div></div><div class="m"><div class="l">累计预约</div><div class="v">231.7万</div></div><div class="m"><div class="l">预约日增</div><div class="v">+83,293</div></div><div class="m"><div class="l">B站预约</div><div class="v">42.8万</div><div class="n up">+10,985</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">7.7</div><div class="n ">3,629 人</div></div></div>
+ <div class="note">官方提示：10月15日 终测招募</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>国漫改编3D格斗竞技游戏。玩法：操作异人与其他玩家对战，见招拆招；组合配置身外身技能，以奇致胜；调整作战小队出战策略。特色：无数值的PVP对战与PVE剧情挑战；以武术道法与民间术数为根源的招式技能；电影级运镜呈现角色故事剧情。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/730674" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-1">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/1afd8081ef2c1c6d0398256fc94979bd.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/386fdac106377d69c1bda391139bf55a.jpg/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>极境：垂钓者</h3><div class="sub">紫龙游戏 · 钓鱼,模拟,休闲,体育,角色扮演,MMORPG,治愈,多人联机,探索,工艺,支持Steam家庭共享,支持手柄,第一人称视角,3D,单人,合作,抓宠</div></div></div>
+ <div class="badges"><span class="b focus">测试招募</span><span class="b focus">重点</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#2</div><div class="n ">持平</div></div><div class="m"><div class="l">累计预约</div><div class="v">7.3万</div></div><div class="m"><div class="l">预约日增</div><div class="v">+19,211</div></div><div class="m"><div class="l">B站预约</div><div class="v">4,593</div><div class="n up">+175</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">9.1</div><div class="n ">86 人</div></div></div>
+ <div class="note">官方提示：测试招募已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>多人联机拟真钓鱼游戏，还原现实钓鱼体验。玩法：通过收线、控竿手法让拟饵呈现不同泳姿，观察浮漂漂相和鱼竿震动判断鱼情；根据鱼种习性和时间、天气选择水域和钓点，钓获后收录进鱼种图鉴；可约好友在同一片水域并肩作钓。特色：鱼与饵交互、竿稍颤动转化为屏幕左下角可见的波形图，不同鱼种波形不同；不同钓组、拟饵有不同持杆动作，竿尖动作如实反映到饵的姿态上；拟饵游动、浮漂沉浮由水流和钓竿或鱼的拉力真实驱动，按物理规则实时演算。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/949370" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-2">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/cf08d9dfc3c4ab17e09ea559a7dcc4d4.png/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/5239ec49d7a50b97eedab840739568b3.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>极限战场</h3><div class="sub">网易游戏 · 射击,竞技,高画质,多人联机,生存,动作</div></div></div>
+ <div class="badges"><span class="b focus">测试招募</span><span class="b focus">重点</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#6</div><div class="n up">↑1</div></div><div class="m"><div class="l">累计预约</div><div class="v">6.3万</div></div><div class="m"><div class="l">预约日增</div><div class="v">+11,363</div></div><div class="m"><div class="l">B站预约</div><div class="v">—</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">8.8</div><div class="n ">247 人</div></div></div>
+ <div class="note">官方提示：测试招募已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>极限运动竞技射击，经理人视角带队参赛。玩法：搜集物资、击败对手、强化装备，与队友战到最后；冲刺、滑铲、瞄准、射击流畅衔接进行交战；击败对手、完成任务赚局内金币，当场强化装备。特色：阵亡后游荡重返战场，快速重整继续战斗；不同定位与战术能力自由搭配，配合队友打出战术。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/944749" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-3">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/ffee34f4cb65cb53402a1434465dc0b2.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/a22d652f5b4ea6e974e101f994c51249.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>变形金刚：新纪元</h3><div class="sub">Wanda Game · 策略,剧情,收集</div></div></div>
+ <div class="badges"><span class="b ok">测试中</span><span class="b focus">重点</span><span class="b info">新进榜</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#21</div></div><div class="m"><div class="l">累计预约</div><div class="v">9.6万</div></div><div class="m"><div class="l">预约日增</div><div class="v">—</div></div><div class="m"><div class="l">B站预约</div><div class="v">473</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">8.3</div><div class="n ">253 人</div></div></div>
+ <div class="note">官方提示：测试下载已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>变形金刚题材策略RPG，移动平台。玩法：招募经典角色，培养升级战队，靠职业搭配与阵容协同取胜；离线时部队持续作战、收集资源并成长；经营方舟号基地设施，升级自动化生产系统获取资源。特色：汽车人与霸天虎宿敌联手对抗暗黑军团的原创剧情；离线时基地仍持续运转，为下一场战斗做准备。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/901325" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-4">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/d33b456314df7f913103dd473a433e97.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/bd48038bfdb5b2df8f872a09fe25badc.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>渊环</h3><div class="sub">巫师协会 · 角色扮演,刷宝</div></div></div>
+ <div class="badges"><span class="b ok">测试中</span><span class="b focus">重点</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#29</div><div class="n up">↑5</div></div><div class="m"><div class="l">累计预约</div><div class="v">8.2万</div></div><div class="m"><div class="l">预约日增</div><div class="v">+1,831</div></div><div class="m"><div class="l">B站预约</div><div class="v">24</div><div class="n up">+9</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">8.3</div><div class="n ">224 人</div></div></div>
+ <div class="note">官方提示：测试下载已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>暗黑题材塔防刷宝，深渊建防线抵御魔物。玩法：在深渊裂隙处建立魔法防线，抵御魔物进攻；用技能、宝石、装备构筑不同BD；根据每层环境与怪物抗性调整技能策略。特色：星海系统：巨型天赋树，从起始点自由探索构筑流派；装备全靠掉落，解锁词条库后可打造到任意装备；宝石分四色，不同宝石搭配产生联动效果。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/759959" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-5">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/a818f467b713b17c2b4c80f9781b819f.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/b994a36940cb1000d8c53239283f99e3.jpg/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>美职篮奇迹梦之队</h3><div class="sub">苦柚Games · 体育,篮球,模拟经营,NBA,养成</div></div></div>
+ <div class="badges"><span class="b ok">测试中</span><span class="b focus">重点</span><span class="b info">回榜</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#39</div></div><div class="m"><div class="l">累计预约</div><div class="v">5,366</div></div><div class="m"><div class="l">预约日增</div><div class="v">+798</div></div><div class="m"><div class="l">B站预约</div><div class="v">64</div><div class="n up">+2</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">8.1</div><div class="n ">62 人</div></div></div>
+ <div class="note">官方提示：测试下载已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>NBA题材篮球经理手游，经营球队阵容。玩法：签约、交易球员，组建并培养阵容；赛前选战术，临场调配球员出手倾向；升级主场景建筑解锁对应玩法权益。特色：球员战力随每日真实NBA赛事表现实时联动；拟真工资帽体系，锚定NBA球队薪资构架；球员属性面板含投篮热区数据。商业化：资料未提及具体付费方式。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/895389" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-6">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/60f92c011cea6ce1aa66954f7b19ff3d.png/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/b1d3f1473e2d0ff18b8cab3516633100.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>我家猫猫是女仆！</h3><div class="sub">土豆花制作组 · 文字,冒险,角色扮演,模拟,平台跳跃,AVG,恋爱,JRPG,2D,可爱,治愈,支持Steam家庭共享,搞笑,剧情,二次元</div></div></div>
+ <div class="badges"><span class="b warn">定档首发</span><span class="b focus">重点</span><span class="b info">新进榜</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#44</div></div><div class="m"><div class="l">累计预约</div><div class="v">2,426</div></div><div class="m"><div class="l">预约日增</div><div class="v">—</div></div><div class="m"><div class="l">B站预约</div><div class="v">—</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">10.0</div><div class="n ">20 人</div></div></div>
+ <div class="note">官方提示：10月30日 首发</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>日常系短篇恋爱视觉小说，扮演店员与猫娘同居。玩法：扮演周边店销售员陆原，与猫娘展开同居生活；通过相处推进剧情，关系随彼此了解改变。特色：猫娘逐渐回想起被遗忘的记忆；使用Live2D。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/965232" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-7">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/80fcfe2717f01df019b65e1b5ee358d7.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/3e39559bfc4bf377ae50e053088c4084.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>淡墨水云乡</h3><div class="sub">完美世界游戏 · 国风,种田,模拟经营,古风,养成,山水,建造,放置,休闲,经营,模拟</div></div></div>
+ <div class="badges"><span class="b ok">测试中</span><span class="b focus">重点</span><span class="b info">新进榜</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">#46</div></div><div class="m"><div class="l">累计预约</div><div class="v">16.7万</div></div><div class="m"><div class="l">预约日增</div><div class="v">—</div></div><div class="m"><div class="l">B站预约</div><div class="v">—</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">8.5</div><div class="n ">345 人</div></div></div>
+ <div class="note">官方提示：测试下载已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>新国风青绿种田手游，自由规划城镇。玩法：拼接地块、建造经营城镇，吸引居民和小动物；安排生产、管理建筑，推进经营；与名士互动、探索秘境、体验剧情。特色：轨迹系统：剧情多结局；灵宠系统：捕捉动物为灵宠，增加名士资质，提高生产效率；巴蜀独立经营区域，含水运建设和自动生产线。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/386451" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-8">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/e5ce22a0cc5d376cafcdda34a920d124.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/d010b0ef91384b537fe6e75815e6392a.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>重返地心之下</h3><div class="sub">光屿工作室 · 角色扮演,冒险,MMORPG,休闲,派对游戏</div></div></div>
+ <div class="badges"><span class="b focus">测试招募</span><span class="b focus">重点</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">未在榜</div></div><div class="m"><div class="l">累计预约</div><div class="v">6.6万</div></div><div class="m"><div class="l">预约日增</div><div class="v">+1,231</div></div><div class="m"><div class="l">B站预约</div><div class="v">—</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">9.0</div><div class="n ">84 人</div></div></div>
+ <div class="note">官方提示：测试招募已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>地下世界题材的多玩法派对冒险游戏。玩法：向下探索多主题地下世界，每层停靠不同主题秘境；选择职业亲自战斗，或用道具、军团等非直接方式取胜；与朋友进行多人障碍闯关、水枪大战、泡泡大战等互坑互救。特色：招募小小兽组建军团，进行肉鸽加塔防策略搭配；公会中从零建城，规划布局、搬运建造、模拟经营，打造全自动生产链；超千种时装配饰自由混搭，坐骑可更换。商业化：计费测试，开放初步商业化方案。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/824722" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-9">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/733706a7b9186713357ab71ebeca9487.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/6dc49b9050d3ef9d9d1bdea2fa986847.png/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>代号：8</h3><div class="sub">北落师门 · 射击,PVE,搜打撤,动作,俯视角,多人联机,卡通,角色扮演,生存</div></div></div>
+ <div class="badges"><span class="b focus">测试招募</span><span class="b focus">重点</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">未在榜</div></div><div class="m"><div class="l">累计预约</div><div class="v">7,227</div></div><div class="m"><div class="l">预约日增</div><div class="v">+379</div></div><div class="m"><div class="l">B站预约</div><div class="v">—</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">9.4</div><div class="n ">40 人</div></div></div>
+ <div class="note">官方提示：测试招募已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>末日病毒题材的PVE俯视角射击搜打撤游戏。玩法：回到地面搜刮物资、对抗怪物与尸潮，打造装备变强；每局约十分钟，与朋友合作摸宝后撤离；建设基地、收集物资以保障生存。特色：装备完全掉落、带随机词缀，可组合词缀玩流派；玩家间交易系统，可买卖装备；多种个性化英雄，可自由组合技能养成；周末以服务器为单位比拼摸宝数量与速度；龙虾每天二十四小时代替玩家打工产出奖励；跨赛季继承装备与金钱，并有赛季专属装备。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/924462" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article><article class="card" id="taptap-10">
+<div class="hero"><img src="https://img-tc.tapimg.com/market/images/3ba3b91fb64927bb0530595a3ecfbf50.jpg/_tap_banner.jpg" alt="" loading="lazy"></div>
+<div class="body">
+ <div class="title"><img class="icon" src="https://img-tc.tapimg.com/market/images/ff3cb709b60a536d99e762423a1ca777.jpg/_tap_appicon.jpg" alt="" loading="lazy"><div><h3>我在地牢当老六</h3><div class="sub">三颗柚工作室 · 地牢,冒险,Roguelike,刷宝,角色扮演</div></div></div>
+ <div class="badges"><span class="b ok">测试中</span><span class="b focus">重点</span></div>
+ <div class="metrics"><div class="m"><div class="l">预约榜</div><div class="v">未在榜</div></div><div class="m"><div class="l">累计预约</div><div class="v">5,866</div></div><div class="m"><div class="l">预约日增</div><div class="v">+131</div></div><div class="m"><div class="l">B站预约</div><div class="v">—</div></div><div class="m"><div class="l">TapTap 评分</div><div class="v">7.7</div><div class="n ">32 人</div></div></div>
+ <div class="note">官方提示：测试下载已开启</div>
+ <div class="ai"><span class="lab">玩法 · AI 依据TapTap 简介 + 开发者的话整理</span>地牢闯关题材的肉鸽游戏。玩法：带领角色逐层向下探索，击败敌人获取装备；根据战斗需求灵活搭配词条，完善打法；层数提升后敌人强度增加，考验构筑与判断。特色：角色成长路径含天赋、训练和成就等系统；每次冒险都能积累有效反馈。</div>
+ 
+ <div class="links"><a href="https://www.taptap.cn/app/904557" target="_blank" rel="noopener">TapTap ↗</a></div>
+</div></article></div><details class="more"><summary>其余 42 款（列出前 15，完整见 Excel）</summary><div class="row"><img src="https://img-tc.tapimg.com/market/images/b46b0544464ec03affcb551eb53e8bac.jpg/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">新大奉打更人</span><span class="ln">#3 · 预约中 · 预约 8.2万（+5,378）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/43e9d957644ca94e74896814c6081df4.jpg/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">白银之城</span><span class="ln">#4 · 预约中 · 预约 202万（+9,385）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/9d7fb560afe5dafcfc279bee0c6605bc.jpg/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">星途天城</span><span class="ln">#5 · 定档首发 · 预约 21.9万（+5,000）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/a2ea2f1d656ef044ec0037c4657711da.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">篮球少女：飞跃巅峰</span><span class="ln">#7 · 定档首发 · 预约 18.7万（+5,176）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/3bdaadfe95d096b30c55365426f64803.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">拳皇·命运</span><span class="ln">#8 · 定档首发 · 预约 16万（+4,013）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/1872d1c47c508dd2d6f5059d2d51cac4.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">蓝色星原：旅谣</span><span class="ln">#9 · 预约中 · 预约 251万（+4,813）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/ba24dee85b38c7364ac8279b3fe4a2c6.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">失落城堡2</span><span class="ln">#10 · 定档首发 · 预约 57.3万（+2,847）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/0a267e0344aa85a8bfd557253b0bfc2b.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">星布谷地</span><span class="ln">#11 · 预约中 · 预约 142.1万（+4,004）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/0a02b598eb1505964800a18f39595097.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">镇魂街王者归来</span><span class="ln">#12 · 预约中 · 预约 18.2万（+3,790）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/76e0373e94213761b931f11843e11e62.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">弹弹小队</span><span class="ln">#13 · 预约中 · 预约 9,707（+2,783）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/f813f504790e09939839d394ea25a333.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">针影裁梦</span><span class="ln">#14 · 预约中 · 预约 3.5万（+2,362）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/4e67bc04cc71c662ede65e37080f9a67.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">时之铃</span><span class="ln">#15 · 预约中 · 预约 1.4万（+6,444）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/6cfd852e99ec3bcb01cffb1f31b30760.jpg/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">拉尼亚</span><span class="ln">#16 · 预约中 · 预约 8.2万（+3,094）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/b3ed2bb74945f23aa923940505d9d1a4.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">英雄请出战</span><span class="ln">#17 · 定档首发 · 预约 4.2万（+1,758）</span></div><div class="row"><img src="https://img-tc.tapimg.com/market/images/1e29efd8b2ed9ceaf6e4d2e0051bedab.png/_tap_appicon.jpg" alt="" loading=lazy><span class="nm">无限大</span><span class="ln">#18 · 定档首发 · 预约 380.5万（+2,536）</span></div></details></section>
+<div class="foot">数字来自各平台公开数据与第三方估算（Gamalytic）；「玩法」段由 AI（DeepSeek）只依据商店资料整理，每条结论都经过原文核对。
+游戏名：有官方中文名用中文；日 / 韩文名优先用官方英文名，没有时为机器翻译（标「译」），原名列在下方。<br>
+手游上线新品：中国 iOS：当天畅销榜快照 24 份；开采于 2026-10-07，开采不满 30 天，暂时只按商店上线日期判新品<br>手游上线新品：美国 iOS：当天畅销榜快照 24 份；开采于 2026-10-07，开采不满 30 天，暂时只按商店上线日期判新品<br>手游上线新品：日本 iOS：当天畅销榜快照 24 份；开采于 2026-10-07，开采不满 30 天，暂时只按商店上线日期判新品<br>手游上线新品：韩国 GP：当天畅销榜快照 9 份；开采于 2026-10-07，开采不满 30 天，暂时只按商店上线日期判新品<br>生成于 2026-10-16T07:30+08:00</div>
+</div></main><script>const L=[...document.querySelectorAll('.side a.sec')],S=L.map(a=>document.querySelector(a.getAttribute('href')));
+const on=()=>{let k=0;S.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<120)k=i});L.forEach((a,i)=>a.classList.toggle('on',i===k))};
+addEventListener('scroll',on,{passive:true});on();</script></body></html>
